@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="/Code/sos.js"></script>
+    
+    <script src="/Code/style.css"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "M-sb2ToRlizQPGuCV",
+      });
+   })();
+</script>
+</head>
+
+<body>
+    <div class="Menu">
+        <div class="titleBar">
+
+            <div class="ambulanceIcon">
+                <a href="">
+                    <img id="Icon" src="/pic/ambulance.jfif" alt="">
+                </a>
+            </div>
+            <div class="treatmentIcon">
+                <a href="">
+                    <img id="Icon" src="/pic/blood.png" alt="">
+                </a>
+            </div>
+            <div class="sosButton">
+                <button id="sos" >SOS</button>
+            </div>
+
+            <div class="mapIcon">
+                <a href="/map.html">
+                    <img id="Icon" src="/pic/mapIcon.jpg" alt="">
+                </a>
+
+            </div>
+            <div class="profileIcon">
+                <a href="">
+                    <img id="Icon" src="/pic/profileIcon.png" alt="">
+                </a>
+            </div>
+
+
+        </div>
+
+            <div class="sosConfirmation">
+                <div class="sosBoxTitle">
+                    <h2>Do you want to sent a SOS message?</h2>
+                </div>
+                <div class="sosConfirmationButton">
+                    <button id="sosConfirmationButton" onclick="sendMail()">Yes</button>
+                    <a href="/DemoTable/src/main/java/com/example/demotable/HelloApplication.java">
+                        <Button id="sosConfirmationButton" >Edit</Button>
+                    </a>
+                    
+                </div>
+               <div class="sosConfirmationBoxClose">
+                <h3 id="close">X</h3>
+               </div>
+    
+            </div>
+        
+
+    </div>
+
+
+    <script src="/Code/style.js"></script>
+</body>
+
+</html>
